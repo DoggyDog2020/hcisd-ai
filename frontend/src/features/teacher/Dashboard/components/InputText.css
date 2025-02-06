@@ -1,0 +1,27 @@
+/* frontend/src/features/teacher/Dashboard/components/InputText.css */
+.input-container {
+    padding: 16px;
+    background-color: white;
+    flex-shrink: 0;
+  }
+  
+  .input-box {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .input-text-field {
+    background-color: white;
+  }
+  
+  .send-button {
+    width: 56px;
+    height: 56px;
+    background-color: var(--hcisd-primary);
+    color: white;
+  }
+  
+  .send-button:hover {
+    background-color: var(--hcisd-secondary);
+  }
+  

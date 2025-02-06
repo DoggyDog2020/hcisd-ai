@@ -1,0 +1,73 @@
+.dashboard-container {
+    /* Full viewport height so we can pin header & footer */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* So the entire page doesn't scroll, only our chat content scrolls */
+  }
+  
+  /* HEADER - pinned at top */
+  .dashboard-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--hcisd-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1300;
+    border-bottom: 3px solid var(--hcisd-accent);
+  }
+  
+  .header-brand-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .header-banner {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .header-title {
+    font-weight: 500;
+  }
+  
+  /* FOOTER - pinned at bottom */
+  .dashboard-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--hcisd-secondary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid var(--hcisd-accent);
+    z-index: 1300;
+  }
+  
+  /* MAIN CONTENT area (between header & footer) */
+  .dashboard-content {
+    position: absolute;
+    top: 80px; /* below header */
+    bottom: 60px; /* above footer */
+    right: 0;
+    /* left is dynamically set by inline styles to match the sidebar width */
+    overflow: hidden; /* we’ll let the ChatInterface handle its own scroll */
+    background-color: var(--light-gray);
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* SIDEBAR TOGGLER (hamburger) - show on all screens for manual toggle */
+  .sidebar-toggle-btn {
+    margin-right: 16px;
+  }
+  

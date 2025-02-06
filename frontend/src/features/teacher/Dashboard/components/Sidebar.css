@@ -1,0 +1,43 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+  
+  .sidebar-title {
+    color: var(--hcisd-primary);
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  
+  .sidebar-menu-item {
+    margin-bottom: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar-menu-item:hover {
+    background-color: var(--hcisd-primary);
+    color: white;
+  }
+  
+  .sidebar-menu-icon {
+    color: inherit;
+  }
+  
+  .sidebar-menu-text {
+    color: inherit;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar-signout {
+    position: absolute;
+    bottom: 16px;
+    width: 90%;
+    left: 5%;
+  }
+  
